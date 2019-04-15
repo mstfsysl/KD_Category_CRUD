@@ -33,3 +33,4 @@ c:\Users\mustafa.soysal\source\repos\KD_Category_CRUD\KD_Category_CRUD\obj\Debug
 c:\Users\mustafa.soysal\source\repos\KD_Category_CRUD\KD_Category_CRUD\obj\Debug\netcoreapp2.1\KD_Category_CRUD.csproj.CopyComplete
 C:\Users\mustafa.soysal\source\repos\KD_Category_CRUD\KD_Category_CRUD\obj\Debug\netcoreapp2.1\KD_Category_CRUD.csprojAssemblyReference.cache
 C:\Users\mustafa.soysal\source\repos\KD_Category_CRUD\KD_Category_CRUD\obj\Debug\netcoreapp2.1\Razor\Views\Home\Update.g.cshtml.cs
+C:\Users\mustafa.soysal\source\repos\KD_Category_CRUD\KD_Category_CRUD\obj\Debug\netcoreapp2.1\Razor\Views\Home\DataTableDeneme.g.cshtml.cs

@@ -1,0 +1,75 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DataTableDeneme</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Başlık1</th>
+                <th>Başlık2</th>
+                <th>Başlık3</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>data1</td>
+            <td>data2</td>
+            <td>data3</td>
+        </tr>
+        <tr>
+            <td>data4</td>
+            <td>data5</td>
+            <td>data6</td>
+        </tr>
+        <tr>
+            <td>data7</td>
+            <td>data8</td>
+            <td>data9</td>
+        </tr>
+        <tr>
+            <td>data10</td>
+            <td>data11</td>
+            <td>data12</td>
+        </tr>
+        <tr>
+            <td>data13</td>
+            <td>data14</td>
+            <td>data15</td>
+        </tr>
+        <tr>
+            <td>data16</td>
+            <td>data17</td>
+            <td>data18</td>
+        </tr>
+        <tr>
+            <td>data19</td>
+            <td>data20</td>
+            <td>data21</td>
+        </tr>
+        <tr>
+            <td>data22</td>
+            <td>data23</td>
+            <td>data24</td>
+        </tr>
+    </table>
+
+    <script>
+        $(document).ready(function () {
+            $('#table').DataTable();
+        });
+    </script>
+</body>
+</html>

@@ -183,5 +183,10 @@ namespace KD_Category_CRUD.Controllers
 
             return View("List",products);
         }
+
+        public IActionResult DataTableDeneme()
+        {
+            return View();
+        }
     }
 }
