@@ -1,0 +1,74 @@
+﻿@using KD_Category_CRUD.Models
+
+@model MasterProduct
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(a => a.Name)
+    @Html.TextBoxFor(a => a.Name)
+    <br />
+    @Html.LabelFor(a => a.StockCode)
+    @Html.TextBoxFor(a => a.StockCode)
+    <br />
+    @Html.LabelFor(a => a.LeadTime)
+    @Html.TextBoxFor(a => a.LeadTime)
+    <br />
+    @Html.LabelFor(a => a.ShiploadTime)
+    @Html.TextBoxFor(a => a.ShiploadTime)
+    <br />
+    @Html.LabelFor(a => a.MainPrice)
+    @Html.TextBoxFor(a => a.MainPrice)
+    <br />
+    @Html.LabelFor(a => a.SalesPrice)
+    @Html.TextBoxFor(a => a.SalesPrice)
+    <br />
+    @Html.LabelFor(a => a.Discount)
+    @Html.TextBoxFor(a => a.Discount)
+    <br />
+    @Html.LabelFor(a => a.CriticalStock)
+    @Html.TextBoxFor(a => a.CriticalStock)
+    <br />
+    @Html.LabelFor(a => a.Category)
+
+    List<Category> categories = (List<Category>)TempData["Categories"];
+
+    @*List<SelectListItem> categoryItems = new List<SelectListItem>();
+
+        foreach (Category category in categories)
+        {
+            categoryItems.Add(new SelectListItem { Text = category.Name, Value = category.Id.ToString() });
+        }
+
+        @Html.DropDownListFor(a => a.Category, (IEnumerable<SelectListItem>)categoryItems, "--Category Seçiniz--")*@
+    @Html.DropDownListFor(a => a.Category, new SelectList(categories, "Id", "Name"), "--Category Seçiniz--")
+    <br />
+
+    @Html.LabelFor(a => a.Brand)
+
+    List<Brand> brands = (List<Brand>)TempData["Brands"];
+
+    @*List<SelectListItem> brandItems = new List<SelectListItem>();
+
+        foreach (Brand brand in brands)
+        {
+            brandItems.Add(new SelectListItem { Text = brand.Name, Value = brand.Id.ToString() });
+        }
+
+        @Html.DropDownListFor(a => a.Brand, (IEnumerable<SelectListItem>)brandItems, "--Brand Seçiniz--")*@
+
+    @Html.DropDownListFor(a => a.Brand, new SelectList(brands, "Id", "Name"), "--Brand Seçiniz--")
+    <br />
+
+    <button type="submit" class="btn btn-success">Kaydet</button>
+
+    <br />
+
+    @ViewBag.Message
+}
+

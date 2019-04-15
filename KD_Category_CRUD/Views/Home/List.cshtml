@@ -1,0 +1,36 @@
+﻿@using KD_Category_CRUD.Models
+
+@model List<MasterProduct>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h2>List</h2>
+
+@ViewBag.Message
+
+<table id="table" class="table">
+
+    <thead>
+        <tr>
+            <th>Ürün adı</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+
+    @foreach (MasterProduct masterProduct in Model)
+    {
+        <tr>
+            <td>@masterProduct.Name</td>
+            <td><a href="/home/Update/@masterProduct.Id" class="btn btn-primary">Güncelle</a></td>
+            <td><a href="/home/Delete/@masterProduct.Id" class="btn btn-danger">Sil</a></td>
+        </tr>
+    }
+</table>
+
+<script>
+
+</script>
+
