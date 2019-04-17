@@ -188,5 +188,10 @@ namespace KD_Category_CRUD.Controllers
         {
             return View();
         }
+
+        public IActionResult StarDeneme()
+        {
+            return View();
+        }
     }
 }
