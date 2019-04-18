@@ -191,7 +191,14 @@ namespace KD_Category_CRUD.Controllers
 
         public IActionResult StarDeneme()
         {
-            return View();
+            Puan puan = new Puan { PuanDegeri = 0 };
+            return View(puan);
+        }
+
+        [HttpPost]
+        public IActionResult StarDeneme(Puan puan)
+        {
+            return View(puan);
         }
     }
 }
