@@ -63,7 +63,7 @@ using KD_Category_CRUD.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(58, 382, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6d5321e1ccd3497780042c456507c785", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fdbf90e0e1b546cd80ae851f90b93d62", async() => {
                 BeginContext(64, 369, true);
                 WriteLiteral(@"
     <meta name=""viewport"" content=""width=device-width"" />
@@ -91,7 +91,7 @@ using KD_Category_CRUD.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(442, 3035, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "68ca63b2a4434d4b9b46f0bbfedc560e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a02bd6fba8a04944b5f2467c9654b12a", async() => {
                 BeginContext(448, 3022, true);
                 WriteLiteral(@"
     <table id=""table"" class=""display"" style=""width:100%"">
